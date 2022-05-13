@@ -5,7 +5,6 @@ import { useState } from "react";
 const App = () => {
   const [input, setInput] = useState("");
   const [prev, setPrev] = useState("0");
-  const [numb, setNumb] = useState(0);
   const [symb, setSymb] = useState("");
 
   function handler(e) {
