@@ -11,9 +11,6 @@ const App = () => {
   function handler(e) {
     const num = Number(e.target.value);
     if (num <= 9 || e.target.value === ".") {
-      // let updateNum = Number(input.concat(e.target.value));
-      // setNumb(Number(input));
-      // console.log(numb, typeof(numb));
       setInput(input.concat(e.target.value));
     }
     if (e.target.value === "RESET") {
@@ -22,8 +19,6 @@ const App = () => {
     if (e.target.value === "DEL") {
       const dlt = input.split("");
       dlt.pop();
-      // console.log(dlt.join())
-      // console.log(input)
       setInput(dlt.join(""));
     }
     if (
