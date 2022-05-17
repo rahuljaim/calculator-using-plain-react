@@ -78,7 +78,7 @@ const App = () => {
   ));
   return (
     <>
-      <div className="container mt-5" style={{ width: "220px" }}>
+      <div className="container mt-5" style={{ width: "225px" }}>
         <input
           className="form-control"
           type="text"
@@ -87,7 +87,7 @@ const App = () => {
           disabled
           value={input}
         />
-        <div className="row">{items}</div>
+        <div className="row mt-2">{items}</div>
       </div>
     </>
   );
