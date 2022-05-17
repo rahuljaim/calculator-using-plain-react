@@ -5,7 +5,7 @@ import { useState } from "react";
 const App = () => {
   const [input, setInput] = useState("");
   const [prev, setPrev] = useState("0");
-  const [numb, setNumb] = useState(0);
+  // const [numb, setNumb] = useState(0);
   const [symb, setSymb] = useState("");
 
   function handler(e) {
@@ -68,7 +68,7 @@ const App = () => {
     <div className={e.class} key={e.id}>
       <button
         type="button"
-        className="btn btn-primary"
+        className={`btn btn-primary ${e.classBtn}`}
         onClick={handler}
         value={e.label}
       >
